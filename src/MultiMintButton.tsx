@@ -92,7 +92,7 @@ export const MultiMintButton = ({
     const [clicked, setClicked] = useState(false);
     const [isVerifying, setIsVerifying] = useState(false);
     const [mintCount, setMintCount] = useState(1);
-    const [totalCost, setTotalCost] = useState(mintCount * (clicked.connection.getBalance(clicked.publicKey) - 0.012));
+    const [totalCost, setTotalCost] = useState(mintCount * (price + 0.012));
 
     useEffect(() => {
         setIsVerifying(false);
