@@ -11,7 +11,7 @@ body{
 /*  background-color:var(--main-background-color);*/
   background: url("img/background.png");
   background-size: cover;
-  font-family: 'Bahnschrift SemiBold', cursive;
+  font-family: 'Impact', cursive;
   font-size: 1.1em;
 }
 
