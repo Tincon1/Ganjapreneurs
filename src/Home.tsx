@@ -580,7 +580,7 @@ const Home = (props: HomeProps) => {
                 <WalletContainer>
                     <Wallet>
                         {wallet ?
-                            <WalletAmount>{(balance || 0.2420).toLocaleString()} SOL<ConnectButton/></WalletAmount> :
+                            <WalletAmount>{(balance || 0).toLocaleString()} SOL<ConnectButton/></WalletAmount> :
                             <ConnectButton>Connect Wallet</ConnectButton>}
                     </Wallet>
                 </WalletContainer>
