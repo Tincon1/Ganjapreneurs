@@ -4,6 +4,7 @@ import Button from '@material-ui/core/Button';
 import {CircularProgress} from '@material-ui/core';
 import {GatewayStatus, useGateway} from '@civic/solana-gateway-react';
 import {CandyMachine} from './candy-machine';
+import {getPhantomWallet} from "@solana/wallet-adapter-wallets";
 
 
 export const CTAButton = styled(Button)`
@@ -92,7 +93,7 @@ export const MultiMintButton = ({
     const [clicked, setClicked] = useState(false);
     const [isVerifying, setIsVerifying] = useState(false);
     const [mintCount, setMintCount] = useState(1);
-    const [totalCost, setTotalCost] = useState(mintCount * (price + 0.012));
+    const [totalCost, setTotalCost] = useState(mintCount * (price  + 0.012));
 
     useEffect(() => {
         setIsVerifying(false);
